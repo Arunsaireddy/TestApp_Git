@@ -8,3 +8,10 @@ app.listen(PORT,()=>{
 
     console.log(`App is listening at port ${PORT} `)
 })
+
+
+app.get("/",(req,res)=>{
+    res.send(`
+        <h1>Welcome to Github Page.</h1>`
+    )
+});
